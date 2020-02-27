@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="根据URL获取图片"
+        android:textSize="18sp"
+        android:gravity="center"/>
+    <com.wwwzm.mybannerlayout.BannerLayout
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:autoPlayDuration="4000"
+        app:indicatorMargin="10dp"
+        app:indicatorPosition="centerBottom"
+        app:indicatorShape="oval"
+        app:indicatorSpace="3dp"
+        app:isAutoPlay="true"
+        app:scrollDuration="600"
+        app:selectedIndicatorColor="#000000"
+        app:selectedIndicatorHeight="6dp"
+        app:selectedIndicatorWidth="6dp"
+        app:unSelectedIndicatorColor="#99ffffff"
+        app:unSelectedIndicatorHeight="6dp"
+        app:unSelectedIndicatorWidth="6dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="获取本地res中的图片"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <com.wwwzm.mybannerlayout.BannerLayout
+        android:id="@+id/banner2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:autoPlayDuration="2000"
+        app:indicatorMargin="10dp"
+        app:indicatorPosition="rightBottom"
+        app:indicatorShape="rect"
+        app:indicatorSpace="3dp"
+        app:isAutoPlay="true"
+        app:scrollDuration="600"
+        app:selectedIndicatorColor="#FF0000"
+        app:selectedIndicatorHeight="6dp"
+        app:selectedIndicatorWidth="6dp"
+        app:unSelectedIndicatorColor="#99ffffff"
+        app:unSelectedIndicatorHeight="6dp"
+        app:unSelectedIndicatorWidth="6dp"/>
+</LinearLayout>
